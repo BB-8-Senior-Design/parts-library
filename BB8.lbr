@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -108,8 +108,103 @@
 </package>
 </packages>
 <symbols>
+<symbol name="BTM7752G">
+<pin name="OUT1" x="-20.32" y="22.86" length="middle"/>
+<pin name="OUT1@2" x="-20.32" y="20.32" length="middle"/>
+<pin name="OUT1@3" x="-20.32" y="17.78" length="middle"/>
+<pin name="OUT1@4" x="-20.32" y="15.24" length="middle"/>
+<pin name="GND" x="-20.32" y="12.7" length="middle"/>
+<pin name="GND@6" x="-20.32" y="10.16" length="middle"/>
+<pin name="GND@7" x="-20.32" y="7.62" length="middle"/>
+<pin name="GND@8" x="-20.32" y="5.08" length="middle"/>
+<pin name="IN1" x="-20.32" y="2.54" length="middle"/>
+<pin name="IN2" x="-20.32" y="0" length="middle"/>
+<pin name="VS" x="-20.32" y="-2.54" length="middle"/>
+<pin name="VS@12" x="-20.32" y="-5.08" length="middle"/>
+<pin name="VS@13" x="-20.32" y="-7.62" length="middle"/>
+<pin name="VS@14" x="-20.32" y="-10.16" length="middle"/>
+<pin name="OUT2" x="-20.32" y="-12.7" length="middle"/>
+<pin name="OUT2@16" x="-20.32" y="-15.24" length="middle"/>
+<pin name="OUT2@17" x="-20.32" y="-17.78" length="middle"/>
+<pin name="OUT2@18" x="-20.32" y="-20.32" length="middle"/>
+<pin name="OUT2@19" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="OUT2@20" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="OUT2@21" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="OUT2@22" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="GND@23" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND@24" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="GND@25" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND@26" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="INH" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="IS" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="VS@29" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="VS@30" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="VS@31" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="VS@32" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="OUT1@33" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="OUT1@34" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="OUT1@35" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="OUT1@36" x="20.32" y="22.86" length="middle" rot="R180"/>
+<wire x1="-15.24" y1="-22.86" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-22.86" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
+<text x="-15.24" y="-25.4" size="1.27" layer="95">&gt;NAME</text>
+<text x="7.62" y="-25.4" size="1.27" layer="95">&gt;VALUE</text>
+<circle x="-13.97" y="22.86" radius="0.508" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
+<deviceset name="BTM7752G">
+<gates>
+<gate name="G$1" symbol="BTM7752G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="36-BSSOP">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$5"/>
+<connect gate="G$1" pin="GND@23" pad="P$23"/>
+<connect gate="G$1" pin="GND@24" pad="P$24"/>
+<connect gate="G$1" pin="GND@25" pad="P$25"/>
+<connect gate="G$1" pin="GND@26" pad="P$26"/>
+<connect gate="G$1" pin="GND@6" pad="P$6"/>
+<connect gate="G$1" pin="GND@7" pad="P$7"/>
+<connect gate="G$1" pin="GND@8" pad="P$8"/>
+<connect gate="G$1" pin="IN1" pad="P$9"/>
+<connect gate="G$1" pin="IN2" pad="P$10"/>
+<connect gate="G$1" pin="INH" pad="P$27"/>
+<connect gate="G$1" pin="IS" pad="P$28"/>
+<connect gate="G$1" pin="OUT1" pad="P$1"/>
+<connect gate="G$1" pin="OUT1@2" pad="P$2"/>
+<connect gate="G$1" pin="OUT1@3" pad="P$3"/>
+<connect gate="G$1" pin="OUT1@33" pad="P$33"/>
+<connect gate="G$1" pin="OUT1@34" pad="P$34"/>
+<connect gate="G$1" pin="OUT1@35" pad="P$35"/>
+<connect gate="G$1" pin="OUT1@36" pad="P$36"/>
+<connect gate="G$1" pin="OUT1@4" pad="P$4"/>
+<connect gate="G$1" pin="OUT2" pad="P$15"/>
+<connect gate="G$1" pin="OUT2@16" pad="P$16"/>
+<connect gate="G$1" pin="OUT2@17" pad="P$17"/>
+<connect gate="G$1" pin="OUT2@18" pad="P$18"/>
+<connect gate="G$1" pin="OUT2@19" pad="P$19"/>
+<connect gate="G$1" pin="OUT2@20" pad="P$20"/>
+<connect gate="G$1" pin="OUT2@21" pad="P$21"/>
+<connect gate="G$1" pin="OUT2@22" pad="P$22"/>
+<connect gate="G$1" pin="VS" pad="P$11"/>
+<connect gate="G$1" pin="VS@12" pad="P$12"/>
+<connect gate="G$1" pin="VS@13" pad="P$13"/>
+<connect gate="G$1" pin="VS@14" pad="P$14"/>
+<connect gate="G$1" pin="VS@29" pad="P$29"/>
+<connect gate="G$1" pin="VS@30" pad="P$30"/>
+<connect gate="G$1" pin="VS@31" pad="P$31"/>
+<connect gate="G$1" pin="VS@32" pad="P$32"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
