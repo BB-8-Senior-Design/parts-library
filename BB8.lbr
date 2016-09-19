@@ -1264,6 +1264,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 </devices>
 </deviceset>
 <deviceset name="RN4020" prefix="U">
+<description>Bluetooth module</description>
 <gates>
 <gate name="G$1" symbol="RN4020" x="0" y="0"/>
 </gates>
