@@ -1078,17 +1078,17 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="10.16" y1="-27.94" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-27.94" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
 <pin name="CS" x="-12.7" y="15.24" length="middle"/>
-<pin name="MOSI" x="-12.7" y="10.16" length="middle"/>
-<pin name="GND@3" x="-12.7" y="5.08" length="middle"/>
-<pin name="VCC" x="-12.7" y="0" length="middle"/>
-<pin name="CLK" x="-12.7" y="-5.08" length="middle"/>
-<pin name="GND@6" x="-12.7" y="-10.16" length="middle"/>
-<pin name="MISO" x="-12.7" y="-15.24" length="middle"/>
-<pin name="UNUSED@8" x="-12.7" y="-20.32" length="middle"/>
-<pin name="CHIPDET" x="-12.7" y="-25.4" length="middle"/>
+<pin name="MOSI" x="-12.7" y="0" length="middle"/>
+<pin name="GND@3" x="-12.7" y="-20.32" length="middle"/>
+<pin name="VCC" x="-12.7" y="20.32" length="middle"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle"/>
+<pin name="GND@6" x="-12.7" y="-25.4" length="middle"/>
+<pin name="MISO" x="-12.7" y="-5.08" length="middle"/>
+<pin name="UNUSED@8" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="CHIPDET" x="-12.7" y="5.08" length="middle"/>
 <pin name="WP" x="15.24" y="15.24" length="middle" rot="R180"/>
 <pin name="COM" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="UNUSED@9" x="-12.7" y="20.32" length="middle"/>
+<pin name="UNUSED@9" x="15.24" y="-10.16" length="middle" rot="R180"/>
 <text x="-7.62" y="22.86" size="1.905" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="BQ51013B">
