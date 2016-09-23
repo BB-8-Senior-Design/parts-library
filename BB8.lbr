@@ -1105,6 +1105,23 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <text x="-1.61" y="-2.33" size="0.5" layer="21">&gt;NAME</text>
 <smd name="P$GND" x="0" y="0" dx="1.89" dy="1.57" layer="1" rot="R90"/>
 </package>
+<package name="SON-8">
+<smd name="P$2" x="-0.325" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
+<rectangle x1="-1.225" y1="-0.56" x2="1.225" y2="1.34" layer="1"/>
+<smd name="P$1" x="-0.975" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
+<smd name="P$3" x="0.325" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
+<smd name="P$4" x="0.975" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
+<smd name="P$5" x="0.975" y="1.435" dx="0.5" dy="0.83" layer="1"/>
+<smd name="P$6" x="0.325" y="1.435" dx="0.5" dy="0.83" layer="1"/>
+<smd name="P$7" x="-0.325" y="1.435" dx="0.5" dy="0.83" layer="1"/>
+<smd name="P$8" x="-0.975" y="1.435" dx="0.5" dy="0.83" layer="1"/>
+<text x="1.8" y="-0.53" size="0.25" layer="25" rot="R270">&gt;NAME</text>
+<circle x="-0.975" y="-0.85" radius="0.1" width="0.05" layer="21"/>
+<wire x1="-1.64" y1="1.65" x2="1.65" y2="1.65" width="0.05" layer="21"/>
+<wire x1="-1.64" y1="-1.65" x2="1.65" y2="-1.65" width="0.05" layer="21"/>
+<wire x1="1.65" y1="-1.65" x2="1.65" y2="1.65" width="0.05" layer="21"/>
+<wire x1="-1.64" y1="-1.65" x2="-1.64" y2="1.65" width="0.05" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BTM7752G">
@@ -1715,9 +1732,40 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <pin name="VO-" x="17.78" y="12.7" length="middle" rot="R180"/>
 <text x="-10.16" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="CSD17308Q3-NMOS">
+<pin name="G1" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="S1" x="8.89" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="D1" x="-8.89" y="5.08" visible="off" length="middle"/>
+<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.762" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="0" x2="2.794" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-2.794" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="0" x2="-1.778" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.254" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0.254" y1="0.762" x2="0" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="-0.254" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="0.762" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="0" x2="2.794" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="2.032" x2="0" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.032" x2="0" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="5.08" x2="2.794" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="5.08" x2="2.794" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="0" x2="-2.794" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="5.08" x2="-0.762" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="5.08" x2="0.508" y2="4.318" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="4.318" x2="0.508" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="5.08" x2="0.508" y2="5.842" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="5.842" x2="-0.762" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="5.08" x2="-0.762" y2="5.842" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="5.08" x2="-0.762" y2="4.318" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="5.08" x2="-2.794" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="5.08" x2="2.794" y2="5.08" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="BTM7752G">
+<deviceset name="BTM7752G" prefix="U">
 <gates>
 <gate name="G$1" symbol="BTM7752G" x="0" y="0"/>
 </gates>
@@ -1767,7 +1815,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOTOR_HEADER">
+<deviceset name="MOTOR_HEADER" prefix="P">
 <gates>
 <gate name="G$1" symbol="M06" x="5.08" y="0"/>
 </gates>
@@ -1821,7 +1869,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STM32F405RGT6">
+<deviceset name="STM32F405RGT6" prefix="U">
 <gates>
 <gate name="G$1" symbol="STM32F4" x="17.78" y="5.08"/>
 </gates>
@@ -1899,7 +1947,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAP_POL_PAN">
+<deviceset name="CAP_POL_PAN" prefix="C">
 <gates>
 <gate name="G$1" symbol="CAP_POL" x="2.54" y="5.08"/>
 </gates>
@@ -1915,7 +1963,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRF7303" prefix="M">
+<deviceset name="IRF7303" prefix="Q">
 <gates>
 <gate name="A" symbol="DUAL-NMOSFET" x="0" y="10.16"/>
 <gate name="B" symbol="DUAL-NMOSFET" x="0" y="-10.16"/>
@@ -1952,7 +2000,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="THM" prefix="THM" uservalue="yes">
+<deviceset name="THM" prefix="RT" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="THERMISTOR" x="0" y="0"/>
 </gates>
@@ -2021,7 +2069,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BQ501210">
+<deviceset name="BQ501210" prefix="U">
 <description>S-PVQFN-N64 package for TI's BQ501210 wireless power transmitter manager.</description>
 <gates>
 <gate name="G$1" symbol="BQ501210" x="0" y="0"/>
@@ -2118,7 +2166,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74LV4T125">
+<deviceset name="SN74LV4T125" prefix="U">
 <description>Level translator</description>
 <gates>
 <gate name="G$1" symbol="SN74LV4T125" x="-10.16" y="12.7"/>
@@ -2147,7 +2195,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5738-SDCARD" prefix="SD">
+<deviceset name="5738-SDCARD" prefix="P">
 <gates>
 <gate name="G$1" symbol="SD-CARD" x="0" y="0"/>
 </gates>
@@ -2173,7 +2221,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BQ51013B-20VQFN" prefix="WPC-RX">
+<deviceset name="BQ51013B-20VQFN" prefix="U">
 <gates>
 <gate name="G$1" symbol="BQ51013B" x="0" y="0"/>
 </gates>
@@ -2320,7 +2368,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="JTAG">
+<deviceset name="JTAG" prefix="P">
 <description>http://www.digikey.com/product-detail/en/cnc-tech/3020-20-0100-00/1175-1612-ND/3441738</description>
 <gates>
 <gate name="G$1" symbol="JTAG" x="-10.16" y="0"/>
@@ -2424,7 +2472,7 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPAD2005D1DGNR" prefix="AMP">
+<deviceset name="TPAD2005D1DGNR" prefix="U">
 <gates>
 <gate name="G$1" symbol="TPA2005D1" x="0" y="0"/>
 </gates>
@@ -2439,6 +2487,23 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <connect gate="G$1" pin="VDD" pad="P$6"/>
 <connect gate="G$1" pin="VO+" pad="P$5"/>
 <connect gate="G$1" pin="VO-" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CSD17308Q3" prefix="Q">
+<gates>
+<gate name="G$1" symbol="CSD17308Q3-NMOS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SON-8">
+<connects>
+<connect gate="G$1" pin="D1" pad="P$5 P$6 P$7 P$8"/>
+<connect gate="G$1" pin="G1" pad="P$4"/>
+<connect gate="G$1" pin="S1" pad="P$1 P$2 P$3"/>
 </connects>
 <technologies>
 <technology name=""/>
