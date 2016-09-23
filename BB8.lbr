@@ -1711,22 +1711,22 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <text x="-15.24" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="BQ294700">
-<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="15.24" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="27.94" x2="7.62" y2="27.94" width="0.254" layer="94"/>
+<wire x1="7.62" y1="27.94" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
-<pin name="VDD" x="-12.7" y="12.7" visible="pin" length="middle"/>
-<pin name="V4" x="-12.7" y="7.62" visible="pin" length="middle"/>
-<pin name="V3" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="V2" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="OUT" x="12.7" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="CD" x="12.7" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="VSS" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="V1" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="-15.24" x2="-7.62" y2="27.94" width="0.254" layer="94"/>
+<pin name="VDD" x="-12.7" y="25.4" visible="pin" length="middle"/>
+<pin name="V4" x="-12.7" y="15.24" visible="pin" length="middle"/>
+<pin name="V3" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="V2" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="OUT" x="12.7" y="25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="CD" x="12.7" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS" x="12.7" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="V1" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
 <text x="-7.62" y="-17.78" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="15.24" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="27.94" size="1.27" layer="96">&gt;VALUE</text>
 <wire x1="-5.08" y1="-7.62" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <pin name="GNDPAD" x="12.7" y="-12.7" visible="pin" length="middle" rot="R180"/>
