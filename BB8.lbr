@@ -1219,6 +1219,16 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
 <text x="-0.0635" y="-2.032" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
+<package name="SPM6530">
+<smd name="P$1" x="-2.775" y="0" dx="3.4" dy="1.85" layer="1" rot="R90"/>
+<smd name="P$2" x="2.775" y="0" dx="3.4" dy="1.85" layer="1" rot="R90"/>
+<wire x1="-3.55" y1="-3.25" x2="-3.55" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-3.55" y1="3.25" x2="3.55" y2="3.25" width="0.127" layer="21"/>
+<wire x1="3.55" y1="3.25" x2="3.55" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-3.55" y1="-3.25" x2="3.55" y2="-3.25" width="0.127" layer="21"/>
+<text x="0" y="4.15" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-4.15" size="1.016" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BTM7752G">
@@ -1964,6 +1974,20 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <wire x1="5.08" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="INDUCTOR">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90" cap="flat"/>
+<text x="2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2809,6 +2833,22 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$2" pad="2"/>
 <connect gate="G$1" pin="P$3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="INDUCTOR-SPM6530" prefix="L">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPM6530">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
