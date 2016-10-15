@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -401,8 +401,8 @@ package type SS</description>
 <text x="-0.35" y="-7.62" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="RADIAL_CAN_SMD-D8">
-<smd name="P$1" x="0" y="0" dx="2.6" dy="0.65" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="4.4" dx="2.6" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="2.8" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="4.5" dx="2.8" dy="0.65" layer="1" rot="R90"/>
 <wire x1="3.3" y1="5.7" x2="3.3" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.3" x2="-2" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="0.1" x2="-3.3" y2="5.7" width="0.127" layer="21"/>
@@ -1322,8 +1322,8 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <text x="-3.8" y="0.95" size="0.8" layer="51">B</text>
 </package>
 <package name="RADIAL_CAN_SMD-B">
-<smd name="P$1" x="0" y="0" dx="1.8" dy="0.65" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="2.8" dx="1.8" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="2" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="2.9" dx="2" dy="0.65" layer="1" rot="R90"/>
 <wire x1="2.15" y1="3.6" x2="2.15" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-2.15" y1="0.1" x2="-2.15" y2="3.6" width="0.127" layer="21"/>
@@ -1340,8 +1340,8 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <text x="0" y="-1.74" size="1.016" layer="21" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="RADIAL_CAN_SMD-G">
-<smd name="P$1" x="0" y="0" dx="3.5" dy="0.9" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="8.21" dx="3.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="3.7" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="8.31" dx="3.7" dy="0.9" layer="1" rot="R90"/>
 <wire x1="5.15" y1="9.85" x2="5.15" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.6" x2="-2" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="-5.15" y1="0.1" x2="-5.15" y2="9.85" width="0.127" layer="21"/>
